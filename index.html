@@ -6,6 +6,7 @@
 <title>Start With Week 0 | Early Phonics Guide</title>
 
 <style>
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -14,17 +15,24 @@ body {
   line-height: 1.65;
 }
 
+.topbar {
+  background: #f2f5fa;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 15px;
+  color: #444;
+}
+
 .container {
-  max-width: 640px;
+  max-width: 680px;
   margin: auto;
-  padding: 28px 22px;
+  padding: 30px 20px 120px;
 }
 
 h1 {
   font-size: 30px;
   line-height: 1.3;
-  font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -33,7 +41,7 @@ p {
 }
 
 .section {
-  margin-top: 34px;
+  margin-top: 32px;
 }
 
 .highlight-box {
@@ -47,61 +55,83 @@ ul {
 }
 
 li {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 
-.cta-box {
-  margin-top: 36px;
-  padding: 22px;
-  background-color: #eef3ff;
-  border-radius: 10px;
+.image-wrapper {
+  margin: 30px 0;
+  text-align: center;
 }
 
-input[type="email"] {
-  width: 100%;
-  padding: 15px;
-  font-size: 16px;
-  margin-bottom: 14px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
 }
 
-button {
-  width: 100%;
-  padding: 16px;
-  font-size: 17px;
-  font-weight: 600;
-  background-color: #1f5eff;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-button:hover {
-  background-color: #1747c7;
-}
-
-.small-text {
+.caption {
   font-size: 14px;
   color: #666;
-  margin-top: 12px;
-  text-align: center;
+  margin-top: 10px;
 }
 
-.footer {
-  margin-top: 50px;
-  font-size: 13px;
-  color: #999;
-  text-align: center;
+.footer-space {
+  height: 80px;
 }
+
+/* Sticky CTA */
+
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+}
+
+.sticky-inner {
+  max-width: 680px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.sticky-inner input {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.sticky-inner button {
+  padding: 12px 16px;
+  font-size: 15px;
+  background-color: #1f5eff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sticky-note {
+  font-size: 12px;
+  text-align: center;
+  color: #777;
+  margin-top: 6px;
+}
+
 </style>
 </head>
 
 <body>
+
+<div class="topbar">
+For parents of children ages 3–5 who want a calmer, clearer starting point.
+</div>
 
 <div class="container">
 
@@ -110,18 +140,19 @@ Start Here If Teaching Your Child to Read Feels Confusing.
 </h1>
 
 <p>
-A calm orientation that explains what actually matters in early phonics — and what doesn’t.
-</p>
-
-<div class="section">
-<p>
-If your child struggles to blend sounds… avoids reading time… or seems frustrated when letters don’t “stick,”
-it’s rarely about intelligence or effort.
+If your child struggles to blend sounds, avoids reading time, or seems frustrated when letters don’t “stick,”
+it’s rarely about effort.
 </p>
 
 <p>
 In most cases, it’s about sequence.
 </p>
+
+<div class="image-wrapper">
+  <img src="assets/week0-mockup.png" alt="Week 0 Parent Orientation Preview">
+  <div class="caption">
+  A structured starting point designed for clarity — not overwhelm.
+  </div>
 </div>
 
 <div class="section highlight-box">
@@ -130,7 +161,7 @@ Early literacy skills build in a specific order. When that order is unclear, pro
 </p>
 
 <p>
-Week 0 walks you through the foundational structure used in effective early phonics instruction — without overwhelm.
+Week 0 explains the foundational structure used in effective early phonics instruction — in a calm, parent-friendly way.
 </p>
 </div>
 
@@ -152,25 +183,26 @@ This is the starting point of a structured 8-week phonics roadmap designed for b
 </p>
 
 <p>
-Built around evidence-based early literacy principles used in structured reading approaches.
+Built around evidence-aligned early literacy principles used in structured reading approaches.
 </p>
 </div>
 
-<div class="cta-box">
-<form action="YOUR-KIT-FORM-ACTION-URL-HERE" method="POST">
-  <input type="email" name="email_address" placeholder="Enter your email address" required>
-  <button type="submit">Start With Week 0</button>
-</form>
+<div class="footer-space"></div>
 
-<p class="small-text">
-Instant access. No spam. Unsubscribe anytime.
-</p>
 </div>
 
-<div class="footer">
-© 2026 Early Phonics Guide
-</div>
+<!-- Sticky Footer Form -->
 
+<div class="sticky-cta">
+  <form action="YOUR-KIT-FORM-ACTION-URL-HERE" method="POST">
+    <div class="sticky-inner">
+      <input type="email" name="email_address" placeholder="Enter your email" required>
+      <button type="submit">Start With Week 0</button>
+    </div>
+    <div class="sticky-note">
+      Instant access. No spam. Unsubscribe anytime.
+    </div>
+  </form>
 </div>
 
 </body>
