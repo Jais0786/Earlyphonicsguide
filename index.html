@@ -88,43 +88,56 @@ li{
 .footer-space{
   height:90px;
 }
+  
+/* Sticky CTA Improved */
 
-/* Sticky CTA */
-
-.sticky{
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  background:#ffffff;
-  border-top:1px solid #e2e2e2;
-  padding:14px 15px;
-  box-shadow:0 -3px 12px rgba(0,0,0,0.05);
+.sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid #e2e2e2;
+  padding: 14px 15px 18px;
+  box-shadow: 0 -3px 12px rgba(0,0,0,0.05);
 }
 
-.sticky-inner{
-  max-width:720px;
-  margin:auto;
-  display:flex;
-  gap:10px;
+.sticky-inner {
+  max-width: 720px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
 }
 
-.sticky-inner input{
-  flex:1;
-  padding:13px;
-  font-size:15px;
-  border-radius:8px;
-  border:1px solid #ccc;
+.sticky-inner input {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-.sticky-inner button{
-  padding:13px 18px;
-  font-size:15px;
-  background:var(--accent);
-  color:#fff;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
+.sticky-inner button {
+  padding: 14px 18px;
+  font-size: 16px;
+  background: #1f5eff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Mobile Fix */
+@media (max-width: 600px) {
+  .sticky-inner {
+    flex-direction: column;
+  }
+
+  .sticky-inner input,
+  .sticky-inner button {
+    width: 100%;
+  }
 }
 
 .note{
@@ -132,11 +145,6 @@ li{
   font-size:12px;
   color:#777;
   margin-top:6px;
-}
-
-@media(max-width:480px){
-  h1{font-size:26px;}
-  p{font-size:16px;}
 }
 
 </style>
