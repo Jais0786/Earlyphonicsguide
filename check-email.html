@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almost There! Check Your Email | Early Phonics Guide</title>
+
+<style>
+/* Premium US Market Styling - Consistent with your Brand */
+
+:root {
+  --primary: #0f172a; 
+  --accent: #1f5eff;  
+  --soft: #f8fafc;    
+  --border: #e2e8f0;
+  --text: #334155;    
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #f1f5f9; /* Soft background to make the white card pop */
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* The Premium Notification Card */
+.container {
+  width: 100%;
+  max-width: 580px; 
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  text-align: center;
+  border-top: 5px solid var(--accent);
+}
+
+.mail-icon {
+  font-size: 56px;
+  margin-bottom: 10px;
+  line-height: 1;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Subtle animation to grab attention */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--primary);
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/* The Instructions Box */
+.highlight {
+  background: var(--soft);
+  border: 1px solid var(--border);
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin: 35px 0;
+  text-align: left;
+}
+
+.highlight-title {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+ul.steps {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+ul.steps li {
+  margin-bottom: 16px;
+  font-size: 16px;
+  position: relative;
+  padding-left: 32px;
+}
+
+ul.steps li::before {
+  content: "👉";
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+}
+
+/* Visual Anchor for the Subject Line */
+.subject-line {
+  background: #ffffff;
+  padding: 4px 10px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 15px;
+  color: var(--accent);
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Deliverability Warning Box */
+.spam-note {
+  background: #fff0f0;
+  border-left: 4px solid #ef4444;
+  padding: 18px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 15px;
+  color: #7f1d1d;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.spam-note strong {
+  color: #991b1b;
+}
+
+@media(max-width: 600px) {
+  .container {
+    padding: 40px 25px;
+  }
+  h1 { font-size: 28px; }
+  p, ul.steps li { font-size: 16px; }
+  .highlight { padding: 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="container">
+
+    <div class="mail-icon">📩</div>
+
+    <h1>You're Almost There!</h1>
+
+    <p>We’ve just sent an email with your access link to the <strong>Week 0 Parent Orientation</strong> guide.</p>
+
+    <div class="highlight">
+      <div class="highlight-title">Here is what you need to do next:</div>
+      <ul class="steps">
+        <li>Go to your email inbox right now.</li>
+        <li>Find the email with the subject line:<br>
+          <span class="subject-line">"Confirm to Start Week 0"</span>
+        </li>
+        <li>Click the blue <strong>Download</strong> button inside.</li>
+      </ul>
+    </div>
+
+    <div class="spam-note">
+      <strong>Didn't receive it?</strong><br> 
+      Please check your <strong>Spam</strong> or <strong>Promotions</strong> folder. If it's there, be sure to drag it to your Primary inbox so you don't miss the upcoming structured roadmap emails.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
 
