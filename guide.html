@@ -41,11 +41,10 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-/* Updated Padding to allow smooth scrolling into the footer */
 .container {
   max-width: 680px; 
   margin: auto;
-  padding: 50px 20px 80px; 
+  padding: 50px 20px 80px; /* Normal padding, no extra space needed now */
 }
 
 h1 {
@@ -151,26 +150,19 @@ li {
 }
 
 /* =========================================
-   The "Reveal Footer" Magic
+   The "Reveal Footer" Magic (Fixed)
    ========================================= */
 
-/* The Sticky CTA wrapper */
-.sticky-wrapper {
-  background: #ffffff;
-  padding: 30px 20px 40px;
-  border-top: 1px solid var(--border);
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 -10px 30px rgba(0,0,0,0.03);
-}
-
-/* Making it stick to the bottom until you scroll past it */
+/* Making it stick directly to the bottom of the screen */
 .sticky {
   position: sticky;
   bottom: 0;
+  width: 100%;
   background: rgba(255, 255, 255, 0.98); 
   backdrop-filter: blur(8px);
-  padding: 15px 0;
+  border-top: 1px solid var(--border);
+  padding: 16px 20px 20px;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05); /* Shadow pointing upwards */
   z-index: 100;
 }
 
@@ -237,12 +229,12 @@ li {
   margin-top: 10px;
 }
 
-/* The Beautiful Legal Footer revealed at the end */
+/* The Beautiful Legal Footer revealed at the very end */
 .site-footer {
   background: #f1f5f9;
   padding: 40px 20px;
   text-align: center;
-  border-top: 1px solid var(--border);
+  /* No top border needed as the sticky element has one */
 }
 
 .site-footer a {
@@ -269,7 +261,7 @@ li {
   .trust-badges { gap: 10px; font-size: 12px; }
   .sticky-inner { flex-direction: column; gap: 10px; }
   .sticky-inner input, .sticky-inner button { width: 100%; text-align: center; }
-  .sticky-wrapper { padding: 20px 15px 30px; }
+  .sticky { padding: 15px 15px 20px; }
   .site-footer { padding: 30px 15px; }
   .site-footer a { display: inline-block; margin: 5px 10px; }
 }
@@ -348,22 +340,20 @@ li {
 
 </div> 
 
-<div class="sticky-wrapper">
-  <div class="sticky">
-    <div class="sticky-form-wrapper">
-      <div class="trust-badges">
-        <span>🛡️ Screen-Free</span>
-        <span>⏱️ 10-Mins a Day</span>
-        <span>🔒 Privacy Respected</span>
-      </div>
-      <form action="https://app.kit.com/forms/9166246/subscriptions" method="POST">
-        <div class="sticky-inner">
-          <input type="email" name="email_address" placeholder="Enter your email address..." required>
-          <button type="submit">Send My Free Week 0 Roadmap ➤</button>
-        </div>
-        <div class="note">Instant access to the PDF. Unsubscribe anytime.</div>
-      </form>
+<div class="sticky">
+  <div class="sticky-form-wrapper">
+    <div class="trust-badges">
+      <span>🛡️ Screen-Free</span>
+      <span>⏱️ 10-Mins a Day</span>
+      <span>🔒 Privacy Respected</span>
     </div>
+    <form action="https://app.kit.com/forms/9166246/subscriptions" method="POST">
+      <div class="sticky-inner">
+        <input type="email" name="email_address" placeholder="Enter your email address..." required>
+        <button type="submit">Send My Free Week 0 Roadmap ➤</button>
+      </div>
+      <div class="note">Instant access to the PDF. Unsubscribe anytime.</div>
+    </form>
   </div>
 </div>
 
